@@ -15,7 +15,7 @@ async function loadTasks() {
 }
 // export const revalidate = 60; //solo se usa en produccion  con esta linea se actualizaria cada 60 segundos la informacion de la pagina en produccion
 
-export const dinamic = "force-dinamic"; //  solo se usa en produccion con esta linea los cambios que se realizen se veran de inmediato en la pagina de produccion
+export const dynamic = "force-dynamic"; //  solo se usa en produccion con esta linea los cambios que se realizen se veran de inmediato en la pagina de produccion
 
 export default async function Home() {
   const tasks = await loadTasks();
