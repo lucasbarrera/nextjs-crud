@@ -40,3 +40,43 @@ a {
     color-scheme: dark;
   }
 }
+
+.card-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: darkgray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .list {
+    width: 50%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+/* para poder aplicar estilos a los componentes jsx en Nextjs se debe de agregar el archivo css en el archivo layout mas cercano */
+.new-task {
+  margin: 20px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #343434;
+  color: white;
+  width: 70%;
+  justify-content: space-evenly;
+}
